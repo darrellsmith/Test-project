@@ -38,8 +38,8 @@ $start = $time;
 
                 $totaltime = ($finish - $start);
                 
-                echo("<br/><br/>");
-                
+                echo("<br/>");
+                echo("Extra features that I wanted to add to a new branch<br/>");
                 echo ("<p>This page took ".round($totaltime,4) ."seconds to load.</p>");
                 echo("<br/><br/>");
             ?>            
