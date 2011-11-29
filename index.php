@@ -13,6 +13,12 @@ $start = $time;
         <title>Git Test</title>
 
     </head>
+    <style>
+        p{
+            font-family: fantasy;
+            
+        }
+    </style>
     <body>
         <div style="text-align: center">
             <h1>GIT test site</h1>
@@ -20,7 +26,7 @@ $start = $time;
         <div style="text-align: left">
             <p>this is a test file</p>
             <?php
-                echo date('G:ia  D M Y');
+                echo date('<p>G:ia  D M Y</p>');
             
                 $time = microtime();
 
@@ -34,7 +40,8 @@ $start = $time;
                 
                 echo("<br/><br/>");
                 
-                echo ("This page took ".round($totaltime,4) ."seconds to load.");
+                echo ("<p>This page took ".round($totaltime,4) ."seconds to load.</p>");
+                echo("<br/><br/>");
             ?>            
         </div>
     </body>
